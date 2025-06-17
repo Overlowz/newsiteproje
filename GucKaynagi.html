@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Güç Kaynağı (PSU)</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f2f5;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #1a3680, #ff9800);
+      display: flex;
+      justify-content: center;
+    }
+
+    li {
+      position: relative;
+    }
+
+    li a {
+      display: inline-block;
+      padding: 16px 20px;
+      color: white;
+      font-size: 18px;
+      text-decoration: none;
+    }
+
+    li a:hover, .menu:hover > a {
+      background-color: #003366;
+    }
+
+    .menu:hover .acilir-menu {
+      display: block;
+    }
+
+    .acilir-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: orange;
+      border-radius: 0 0 8px 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      min-width: 200px;
+    }
+
+    .acilir-menu a {
+      display: block;
+      padding: 12px;
+      color: white;
+      text-align: left;
+    }
+
+    .aktif {
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      background: white;
+      border-radius: 12px;
+      padding: 40px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    h1, h2, h3 {
+      color: #1a1a1a;
+    }
+
+    p {
+      font-size: 18px;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    img {
+      width: 100%;
+      max-width: 1000px;
+      border-radius: 10px;
+      margin: 30px auto;
+      display: block;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 30px 0;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 12px;
+      font-size: 17px;
+    }
+
+    th {
+      background-color: #f7f7f7;
+      font-weight: bold;
+    }
+
+    .section-title {
+      font-size: 24px;
+      color: #003366;
+      margin-top: 40px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li><a class="aktif" href="Anasayfa.html">Anasayfa</a></li>
+    <li class="menu"><a href="#">İç Donanım</a>
+      <div class="acilir-menu">
+        <a href="Anakart.html">Anakart</a>
+        <a href="EkranKarti.html">Ekran Kartı</a>
+        <a href="RAMBellek.html">RAM Bellek</a>
+        <a href="İslemci.html">İşlemci</a>
+        <a href="DepolamaAygiti.html">Depolama Aygıtı</a>
+        <a href="GucKaynagi.html">Güç Kaynağı</a>
+        <a href="SesKarti.html">Ses Kartı</a>
+        <a href="Fan.html">Fan(Soğutucu)</a>
+        <a href="cd_dvd.html">CD-DVD Sürücü</a>
+      </div>
+    </li>
+    <li class="menu"><a href="#">Dış Donanım</a>
+        <div class="acilir-menu">
+          <a href="Monitor.html">Monitör</a>
+          <a href="Klavye_Mouse.html">Klavye-Mouse</a>
+          <a href="Hoparlor.html">Hoparlör</a>
+          <a href="Kulaklik_Mikrafon.html">Kulaklık-Mikrafon</a>
+          <a href="Yazicilar.html">Yazıcı</a>
+          <a href="Tarayicilar.html">Tarayıcı</a>
+          <a href="Web_Kamera.html">Web Kamera</a>
+          <a href="Modem.html">Modem</a>
+        </div>
+    </li>
+  </ul>
+
+  <div class="container">
+    <h1>Güç Kaynağı (PSU) Nedir?</h1>
+    <p>Güç kaynağı, bilgisayarın elektrik ihtiyacını karşılayan bileşendir. Şebekeden aldığı 220V AC'yi, bileşenlerin çalışabileceği DC voltaja çevirir.</p>
+
+    <img src="Fotoğraflar/psufoto1.jpg" alt="PSU Fotoğrafı">
+
+    <h2 class="section-title">PSU'nun Temel Görevleri</h2>
+    <p>Uygun voltajlara çevirme, stabil enerji sağlama, aşırı gerilimden koruma gibi görevler üstlenir.</p>
+
+    <h2 class="section-title">PSU Özellikleri</h2>
+
+    <h3>1. Watt Değeri</h3>
+    <table>
+      <tr><th>Sistem Türü</th><th>Önerilen Watt</th></tr>
+      <tr><td>Ofis – Temel</td><td>300–450W</td></tr>
+      <tr><td>Oyun Sistemi</td><td>550–750W</td></tr>
+      <tr><td>Yüksek Performans</td><td>750–1000W+</td></tr>
+      <tr><td>Çift GPU</td><td>1000W+</td></tr>
+    </table>
+
+    <h3>2. 80 PLUS Sertifikası</h3>
+    <table>
+      <tr><th>Sertifika</th><th>Verimlilik</th></tr>
+      <tr><td>80+ White</td><td>%80</td></tr>
+      <tr><td>80+ Bronze</td><td>%82–85</td></tr>
+      <tr><td>80+ Silver</td><td>%85–88</td></tr>
+      <tr><td>80+ Gold</td><td>%87–90</td></tr>
+      <tr><td>80+ Platinum</td><td>%90–92</td></tr>
+      <tr><td>80+ Titanium</td><td>%92–94</td></tr>
+    </table>
+
+    <h3>3. Konnektör Türleri</h3>
+    <table>
+      <tr><th>Kablo</th><th>Kullanım</th></tr>
+      <tr><td>24-pin ATX</td><td>Anakart</td></tr>
+      <tr><td>8-pin CPU</td><td>İşlemci</td></tr>
+      <tr><td>6+2 PCIe</td><td>Ekran Kartı</td></tr>
+      <tr><td>SATA</td><td>SSD/HDD</td></tr>
+      <tr><td>Molex</td><td>Fan/Eski Donanım</td></tr>
+    </table>
+
+    <h3>4. Modülerlik</h3>
+    <p>Non-Modüler (sabit), Yarı Modüler (kısmen çıkarılabilir), Tam Modüler (tümü tak-çıkar) tipleri vardır. Kablo yönetimi için tam modüler önerilir.</p>
+
+    <img src="Fotoğraflar/psufoto2.jpeg" alt="PSU Görseli">
+
+    <h3>5. Soğutma & Gürültü</h3>
+    <p>Fan boyutu (120/140mm) ve sessiz çalışma teknolojisi önemlidir. Kaliteli PSU'lar yük altında sessiz çalışır.</p>
+
+    <h2 class="section-title">PSU Seçerken Dikkat Edilecekler</h2>
+    <ul>
+      <li>✔️ Donanımın toplam TDP’si + %20 pay</li>
+      <li>✔️ Güvenilir marka (Corsair, Seasonic, MSI vs.)</li>
+      <li>✔️ En az 80+ Bronze</li>
+      <li>✔️ Koruma devreleri (OVP, SCP, OCP...)</li>
+      <li>✔️ Modüler yapı</li>
+    </ul>
+
+    <h2 class="section-title">Güç Hesaplama (Örnek)</h2>
+    <table>
+      <tr><th>Bileşen</th><th>TDP</th></tr>
+      <tr><td>CPU</td><td>65–125W</td></tr>
+      <tr><td>GPU</td><td>150–220W</td></tr>
+      <tr><td>Anakart + RAM</td><td>50–70W</td></tr>
+      <tr><td>Depolama</td><td>15W</td></tr>
+    </table>
+    <p><strong>Toplam:</strong> 350–450W ⇒ PSU Önerisi: 600W Gold</p>
+
+    <h2 class="section-title">Özet</h2>
+    <table>
+      <tr><th>Özellik</th><th>Tavsiye</th></tr>
+      <tr><td>Watt</td><td>Donanıma göre +%20</td></tr>
+      <tr><td>Verimlilik</td><td>80+ Gold veya üstü</td></tr>
+      <tr><td>Modüler</td><td>Tercih edilmeli</td></tr>
+    </table>
+  </div>
+</body>
+</html>

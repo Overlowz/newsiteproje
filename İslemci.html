@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>İşlemci</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #1a3680, #ff9800);
+            display: flex;
+            justify-content: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        li {
+            position: relative;
+        }
+
+        li a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 16px 20px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+
+        li a:hover, .menu:hover > a {
+            background-color: #003366;
+        }
+
+        .menu:hover .acilir-menu {
+            display: block;
+        }
+
+        .acilir-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: orange;
+            border-radius: 0 0 8px 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            z-index: 10;
+            min-width: 200px;
+        }
+
+        .acilir-menu a {
+            display: block;
+            padding: 12px 16px;
+            color: white;
+            text-align: left;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .acilir-menu a:hover {
+            background-color: #d17f00;
+        }
+
+        .aktif {
+            font-weight: bold;
+        }
+
+        .sayfaarkasi {
+            margin: 40px auto;
+            padding: 40px;
+            max-width: 1200px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        .sayfaici {
+            text-align: center;
+            font-size: 48px;
+            font-weight: bold;
+            color: #1a1a1a;
+            margin-bottom: 30px;
+        }
+
+        .sayfaici1, .sayfaici32 {
+            font-size: 18px;
+            color: #333;
+            line-height: 1.6;
+            margin: 0 5% 30px;
+        }
+
+        .sayfaici2, .sayfaici11 {
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+        }
+
+        .sayfaici2 img, .sayfaici11 img {
+            width: 100%;
+            max-width: 1000px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .baslik {
+            font-size: 26px;
+            font-weight: bold;
+            color: #003366;
+            margin: 30px 0 10px 40px;
+        }
+
+        .metin {
+            font-size: 18px;
+            color: #333;
+            line-height: 1.6;
+            margin-left: 60px;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 95%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            font-size: 18px;
+        }
+
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f7f7f7;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a class="aktif" href="Anasayfa.html">Anasayfa</a></li>
+        <li class="menu"><a href="#">İç Donanım</a>
+            <div class="acilir-menu">
+                <a href="Anakart.html">Anakart</a>
+                <a href="EkranKarti.html">Ekran Kartı</a>
+                <a href="RAMBellek.html">RAM Bellek</a>
+                <a href="İslemci.html">İşlemci</a>
+                <a href="DepolamaAygiti.html">Depolama Aygıtı</a>
+                <a href="GucKaynagi.html">Güç Kaynağı</a>
+                <a href="SesKarti.html">Ses Kartı</a>
+                <a href="Fan.html">Fan(Soğutucu)</a>
+                <a href="cd_dvd.html">CD-DVD Sürücü</a>
+            </div>
+        </li>
+        </li>
+            <li class="menu"><a href="#">Dış Donanım</a>
+            <div class="acilir-menu">
+                <a href="Monitor.html">Monitör</a>
+                <a href="Klavye_Mouse.html">Klavye-Mouse</a>
+                <a href="Hoparlor.html">Hoparlör</a>
+                <a href="Kulaklik_Mikrafon.html">Kulaklık-Mikrafon</a>
+                <a href="Yazicilar.html">Yazıcı</a>
+                <a href="Tarayicilar.html">Tarayıcı</a>
+                <a href="Web_Kamera.html">Web Kamera</a>
+                <a href="Modem.html">Modem</a>
+            </div>
+        </li>
+    </ul>
+
+    <div class="sayfaarkasi">
+        <div class="sayfaici">İşlemci Nedir?</div>
+
+        <div class="sayfaici1">
+            İşlemci, bilgisayarda yapılan her tür işlemin merkezinde bulunan, hesaplamaları ve komutları gerçekleştiren donanım bileşenidir.
+            Bilgisayarın "beyni" olarak kabul edilir. Yazılım ile donanım arasındaki tüm veri alışverişi, işlemci tarafından yönetilir.
+        </div>
+
+        <div class="sayfaici2">
+            <img src="Fotoğraflar/İslemciFoto1.jpg" alt="İşlemci resmi">
+        </div>
+
+        <div class="baslik">İşlemcinin Temel Bileşenleri</div>
+        <table>
+            <tr><th>Bileşen</th><th>Açıklama</th></tr>
+            <tr><td>ALU</td><td>Sayısal ve mantıksal işlemleri yapar. (toplama, çarpma, karşılaştırma)</td></tr>
+            <tr><td>CU</td><td>Komutları yönlendirir, sistem parçalarını kontrol eder.</td></tr>
+            <tr><td>Kayıtlar</td><td>Geçici verilerin saklandığı küçük hızlı hafıza alanları.</td></tr>
+            <tr><td>Cache</td><td>Sık kullanılan verilerin saklandığı çok hızlı bellek (L1, L2, L3)</td></tr>
+        </table>
+
+        <div class="baslik">1. Çekirdek Sayısı</div>
+        <div class="metin">
+            Her çekirdek bir "bağımsız işlem birimi" gibi çalışır. Çok çekirdekli işlemciler çoklu görevlerde avantaj sağlar.
+        </div>
+        <table>
+            <tr><th>Kullanım</th><th>Önerilen Çekirdek</th></tr>
+            <tr><td>Ofis / İnternet</td><td>2–4 çekirdek</td></tr>
+            <tr><td>Oyun</td><td>6–8 çekirdek</td></tr>
+            <tr><td>Profesyonel</td><td>8–16+ çekirdek</td></tr>
+        </table>
+
+        <div class="baslik">2. İş Parçacığı (Threads)</div>
+        <div class="metin">
+            Hyper-Threading veya SMT teknolojileri ile çekirdekler birden fazla iş parçacığı çalıştırabilir.
+        </div>
+
+        <div class="sayfaici11">
+            <img src="Fotoğraflar/İslemciFoto2.webp" alt="Threading şeması">
+        </div>
+
+        <div class="baslik">3. Saat Hızı (Clock Speed)</div>
+        <div class="metin">GHz cinsinden ölçülür. Yüksek saat hızı, hızlı komut işleme sağlar ama çekirdek sayısıyla birlikte düşünülmelidir.</div>
+
+        <div class="baslik">4. Önbellek (Cache Memory)</div>
+        <div class="metin">L1: En hızlı, küçük | L2: Orta hız | L3: En büyük, ortak kullanım</div>
+        <table>
+            <tr><th>Cache Türü</th><th>Boyut</th><th>Hız</th></tr>
+            <tr><td>L1</td><td>32–128 KB</td><td>En hızlı</td></tr>
+            <tr><td>L2</td><td>256 KB–1 MB</td><td>Hızlı</td></tr>
+            <tr><td>L3</td><td>4–64 MB</td><td>Orta hız</td></tr>
+        </table>
+
+        <div class="baslik">5. TDP (Isıl Tasarım Gücü)</div>
+        <div class="metin">Watt cinsindendir. Yüksek TDP = daha çok ısı ve soğutma ihtiyacı.</div>
+
+        <div class="baslik">6. Üretim Teknolojisi (nm)</div>
+        <div class="metin">Düşük nm: daha az enerji, daha az ısı, daha küçük transistörler.</div>
+
+        <div class="baslik">İşlemci Serileri</div>
+        <div class="metin">
+            🔹 <b>Intel:</b> i3–i9 (F: grafik yok, K: overclock var)<br>
+            🔹 <b>AMD Ryzen:</b> 3–9 ve Threadripper (yüksek çekirdekli işler için)
+        </div>
+
+        <div class="baslik">İşlemci Seçiminde Dikkat Edilecekler</div>
+        <table>
+            <tr><th>Kriter</th><th>Açıklama</th></tr>
+            <tr><td>Anakart Uyum</td><td>Soket tipi (LGA, AM4 vs.)</td></tr>
+            <tr><td>Soğutma</td><td>Yüksek TDP’de güçlü soğutucu gerekir</td></tr>
+            <tr><td>Overclock</td><td>K modeli Intel veya Ryzen genelde destekler</td></tr>
+            <tr><td>iGPU</td><td>Ekran kartı olmayan sistemde önemlidir</td></tr>
+        </table>
+
+        <div class="baslik">Sonuç</div>
+        <div class="sayfaici32">
+            En iyi işlemci, ihtiyaçlarınıza uygun olanıdır. Oyun, ofis, tasarım veya profesyonel iş yükleri için farklı tercihler yapılmalıdır.
+        </div>
+    </div>
+</body>
+</html>

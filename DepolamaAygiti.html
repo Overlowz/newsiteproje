@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Depolama Aygıtı</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f2f5;
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #1a3680, #ff9800);
+      display: flex;
+      justify-content: center;
+    }
+
+    li {
+      position: relative;
+    }
+
+    li a {
+      display: block;
+      padding: 16px 20px;
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    li a:hover,
+    .menu:hover > a {
+      background-color: #003366;
+    }
+
+    .menu:hover .acilir-menu {
+      display: block;
+    }
+
+    .acilir-menu {
+      display: none;
+      position: absolute;
+      background-color: orange;
+      min-width: 200px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      z-index: 1;
+    }
+
+    .acilir-menu a {
+      display: block;
+      padding: 12px;
+      color: white;
+    }
+
+    .aktif {
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      background: white;
+      border-radius: 12px;
+      padding: 40px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    h1, h2, h3 {
+      color: #1a1a1a;
+    }
+
+    p {
+      font-size: 18px;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    img {
+      width: 100%;
+      max-width: 1000px;
+      border-radius: 10px;
+      margin: 30px auto;
+      display: block;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 30px 0;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 12px;
+      font-size: 17px;
+    }
+
+    th {
+      background-color: #f7f7f7;
+      font-weight: bold;
+    }
+
+    .section-title {
+      font-size: 24px;
+      color: #003366;
+      margin-top: 40px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li><a class="aktif" href="Anasayfa.html">Anasayfa</a></li>
+    <li class="menu"><a href="#">İç Donanım</a>
+      <div class="acilir-menu">
+        <a href="Anakart.html">Anakart</a>
+        <a href="EkranKarti.html">Ekran Kartı</a>
+        <a href="RAMBellek.html">RAM Bellek</a>
+        <a href="İslemci.html">İşlemci</a>
+        <a href="DepolamaAygiti.html">Depolama Aygıtı</a>
+        <a href="GucKaynagi.html">Güç Kaynağı</a>
+        <a href="SesKarti.html">Ses Kartı</a>
+        <a href="Fan.html">Fan(Soğutucu)</a>
+        <a href="cd_dvd.html">CD-DVD Sürücü</a>
+      </div>
+    </li>
+    </li>
+            <li class="menu"><a href="#">Dış Donanım</a>
+            <div class="acilir-menu">
+                <a href="Monitor.html">Monitör</a>
+                <a href="Klavye_Mouse.html">Klavye-Mouse</a>
+                <a href="Hoparlor.html">Hoparlör</a>
+                <a href="Kulaklik_Mikrafon.html">Kulaklık-Mikrafon</a>
+                <a href="Yazicilar.html">Yazıcı</a>
+                <a href="Tarayicilar.html">Tarayıcı</a>
+                <a href="Web_Kamera.html">Web Kamera</a>
+                <a href="Modem.html">Modem</a>
+            </div>
+        </li>
+  </ul>
+
+  <div class="container">
+    <h1>Depolama Aygıtı Nedir?</h1>
+    <p>Depolama aygıtı, bilgisayarda verilerin kalıcı olarak saklandığı donanımdır. İşletim sistemi, programlar, belgeler, oyunlar, fotoğraflar, videolar gibi tüm veriler burada tutulur.</p>
+
+    <img src="Fotoğraflar/Harddiskfoto1.jpeg" alt="Depolama aygıtı">
+
+    <h2 class="section-title">Depolama Aygıtı Türleri</h2>
+
+    <h3>1. HDD (Hard Disk Drive – Mekanik Disk)</h3>
+    <table>
+      <tr><th>Özellik</th><th>Açıklama</th></tr>
+      <tr><td>Mekanik yapılı</td><td>İçinde dönen plakalar ve okuma/yazma kafası vardır.</td></tr>
+      <tr><td>Daha ucuz</td><td>SSD’ye göre uygun fiyatlıdır.</td></tr>
+      <tr><td>Daha yavaş</td><td>Veri erişimi ve açılış hızı düşüktür.</td></tr>
+      <tr><td>Uzun ömürlü</td><td>Dikkatli kullanılırsa yıllarca çalışabilir.</td></tr>
+      <tr><td>Gürültülü</td><td>Çalışırken ses çıkarabilir.</td></tr>
+    </table>
+
+    <p><b>Dönüş Hızı (RPM):</b> 5400 RPM (sessiz), 7200 RPM (hızlı)</p>
+    <img src="Fotoğraflar/depolamafoto2.jpg" alt="HDD">
+
+    <h3>2. SSD (Solid State Drive)</h3>
+    <table>
+      <tr><th>Özellik</th><th>Açıklama</th></tr>
+      <tr><td>Elektronik yapılı</td><td>Hareketli parçası yoktur, NAND flash bellek kullanır.</td></tr>
+      <tr><td>Çok hızlı</td><td>Açılış ve veri aktarım süresi çok kısadır.</td></tr>
+      <tr><td>Sessiz</td><td>Çalışırken ses çıkarmaz.</td></tr>
+      <tr><td>Dayanıklı</td><td>Sarsıntıya karşı dirençlidir.</td></tr>
+      <tr><td>Pahalı</td><td>HDD’ye kıyasla daha maliyetlidir.</td></tr>
+    </table>
+
+    <h3>SSD Türleri</h3>
+    <table>
+      <tr><th>Tür</th><th>Bağlantı</th><th>Hız</th></tr>
+      <tr><td>SATA SSD</td><td>SATA</td><td>500–600 MB/s</td></tr>
+      <tr><td>NVMe SSD</td><td>PCIe</td><td>2000–7000+ MB/s</td></tr>
+    </table>
+    <p><i>M.2 form faktörüdür; NVMe teknolojidir.</i></p>
+    <img src="Fotoğraflar/depolamafoto3.jpg" alt="SSD">
+
+    <h3>3. SSHD (Hybrid Disk)</h3>
+    <p>SSD + HDD birleşimidir. İşletim sistemi SSD kısmında, veriler HDD kısmında tutulur.</p>
+    <img src="Fotoğraflar/depolamafoto4.png" alt="SSHD">
+
+    <h3>4. Harici Depolama</h3>
+    <p>USB veya Thunderbolt ile bağlanır. Taşınabilir diskler ve flash bellekler bu gruba girer.</p>
+    <img src="Fotoğraflar/depolamafoto5.jpg" alt="Harici disk">
+
+    <h3>5. Bulut Depolama</h3>
+    <p>Google Drive, Dropbox gibi internet tabanlı çözümler. Yedekleme ve uzaktan erişim için idealdir.</p>
+
+    <h2 class="section-title">Depolama Aygıtları Karşılaştırması</h2>
+    <table>
+      <tr><th>Özellik</th><th>HDD</th><th>SSD (SATA)</th><th>NVMe SSD</th><th>SSHD</th></tr>
+      <tr><td>Hız</td><td>~100 MB/s</td><td>~500 MB/s</td><td>3000+ MB/s</td><td>~150 MB/s</td></tr>
+      <tr><td>Dayanıklılık</td><td>Düşük</td><td>Yüksek</td><td>Yüksek</td><td>Orta</td></tr>
+      <tr><td>Fiyat/GB</td><td>Uygun</td><td>Orta</td><td>Pahalı</td><td>Orta</td></tr>
+      <tr><td>Kapasite</td><td>1–20 TB</td><td>128 GB–4 TB</td><td>256 GB–4 TB</td><td>500 GB–2 TB</td></tr>
+    </table>
+
+    <h2 class="section-title">Depolama Aygıtı Seçerken</h2>
+    <p>✔️ Hız mı kapasite mi?<br>
+       ✔️ Bağlantı tipi (SATA, M.2, PCIe)<br>
+       ✔️ Taşınabilirlik / dayanıklılık<br>
+       ✔️ Yedekleme ihtiyacı (harici disk / bulut)</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Ekran Kartı</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #1a3680, #ff9800);
+            display: flex;
+            justify-content: center;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        li {
+            position: relative;
+        }
+
+        li a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 16px 20px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+
+        li a:hover, .menu:hover > a {
+            background-color: #003366;
+        }
+
+        .menu:hover .acilir-menu {
+            display: block;
+        }
+
+        .acilir-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: orange;
+            border-radius: 0 0 8px 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            z-index: 10;
+            min-width: 200px;
+        }
+
+        .acilir-menu a {
+            display: block;
+            padding: 12px 16px;
+            color: white;
+            text-align: left;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .acilir-menu a:hover {
+            background-color: #d17f00;
+        }
+
+        .aktif {
+            font-weight: bold;
+        }
+
+        .sayfaarkasi {
+            margin: 40px auto;
+            padding: 40px;
+            max-width: 1100px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        .sayfaici {
+            text-align: center;
+            font-size: 48px;
+            font-weight: bold;
+            color: #1a1a1a;
+            margin-bottom: 30px;
+        }
+
+        .sayfaici2 {
+            font-size: 18px;
+            color: #333;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .sayfaici3,
+        .sayfaici8 {
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+        }
+
+        .sayfaici3 img,
+        .sayfaici8 img {
+            width: 100%;
+            max-width: 1000px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .sayfaici4,
+        .sayfaici6,
+        .sayfaici9,
+        .sayfaici14 {
+            font-size: 26px;
+            font-weight: bold;
+            color: #003366;
+            margin-bottom: 10px;
+            margin-left: 20px;
+        }
+
+        .sayfaici5,
+        .sayfaici7,
+        .sayfaici10,
+        .sayfaici11,
+        .sayfaici12,
+        .sayfaici13,
+        .sayfaici15 {
+            font-size: 18px;
+            color: #333;
+            line-height: 1.6;
+            margin: 0 0 20px 40px;
+        }
+
+        .sayfaici10,
+        .sayfaici12 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a class="aktif" href="Anasayfa.html">Anasayfa</a></li>
+        <li class="menu"><a href="#">İç Donanım</a>
+            <div class="acilir-menu">
+                <a href="Anakart.html">Anakart</a>
+                <a href="EkranKarti.html">Ekran Kartı</a>
+                <a href="RAMBellek.html">RAM Bellek</a>
+                <a href="İslemci.html">İşlemci</a>
+                <a href="DepolamaAygiti.html">Depolama Aygıtı</a>
+                <a href="GucKaynagi.html">Güç Kaynağı</a>
+                <a href="SesKarti.html">Ses Kartı</a>
+                <a href="Fan.html">Fan (Soğutucu)</a>
+                <a href="cd_dvd.html">CD-DVD Sürücü</a>
+            </div>
+        </li>
+        </li>
+            <li class="menu"><a href="#">Dış Donanım</a>
+            <div class="acilir-menu">
+                <a href="Monitor.html">Monitör</a>
+                <a href="Klavye_Mouse.html">Klavye-Mouse</a>
+                <a href="Hoparlor.html">Hoparlör</a>
+                <a href="Kulaklik_Mikrafon.html">Kulaklık-Mikrafon</a>
+                <a href="Yazicilar.html">Yazıcı</a>
+                <a href="Tarayicilar.html">Tarayıcı</a>
+                <a href="Web_Kamera.html">Web Kamera</a>
+                <a href="Modem.html">Modem</a>
+            </div>
+        </li>
+    </ul>
+
+    <div class="sayfaarkasi">
+        <div class="sayfaici">Ekran Kartı Nedir?</div>
+
+        <div class="sayfaici2">
+            Ekran kartı, bir bilgisayarın görüntü işlemeden sorumlu donanım bileşenidir. Başka bir deyişle, bilgisayarın görsel 
+            verileri (örneğin videolar, oyunlar, grafikler) işleyip monitöre aktarmasını sağlar.
+        </div>
+
+        <div class="sayfaici3">
+            <img src="Fotoğraflar/EkranKartifoto1.jpg" alt="Ekran kartı örneği">
+        </div>
+
+        <div class="sayfaici4">Temel Görevleri</div>
+        <div class="sayfaici5">
+            <p>- Grafik verilerini işler.</p>
+            <p>- Görüntüyü monitöre aktarır.</p>
+            <p>- Oyun, 3D modelleme, video düzenleme gibi yüksek grafik gücü gerektiren işlemlerde performansı artırır.</p>
+        </div>
+
+        <div class="sayfaici6">Ekran Kartının Bileşenleri</div>
+        <div class="sayfaici7">
+            <p>1. GPU (Graphics Processing Unit): Ekran kartının işlemcisidir. Grafik verilerini işler.</p>
+            <p>2. VRAM (Video RAM): Grafik verilerini geçici olarak depolar. Ne kadar yüksekse, o kadar karmaşık grafikler işlenebilir.</p>
+            <p>3. Soğutucu/Fan: Isınmayı önler.</p>
+            <p>4. Bağlantı Noktaları: HDMI, DisplayPort gibi monitöre bağlantı sağlayan çıkışlar.</p>
+        </div>
+
+        <div class="sayfaici8">
+            <img src="Fotoğraflar/EkranKartifoto2.jpg" alt="Ekran kartı bileşenleri">
+        </div>
+
+        <div class="sayfaici9">Türleri</div>
+
+        <div class="sayfaici10">1. Entegre (Paylaşımlı) Ekran Kartı:</div>
+        <div class="sayfaici11">
+            <p>- Anakart veya işlemci içine gömülüdür.</p>
+            <p>- Düşük performanslıdır.</p>
+            <p>- Ofis işleri, internette gezinme için yeterlidir.</p>
+        </div>
+
+        <div class="sayfaici12">2. Harici (Bağımsız) Ekran Kartı:</div>
+        <div class="sayfaici13">
+            <p>- Ayrı bir donanım kartı olarak anakarta takılır.</p>
+            <p>- Yüksek performanslıdır.</p>
+            <p>- Oyun, grafik tasarım, video düzenleme gibi işlerde kullanılır.</p>
+        </div>
+
+        <div class="sayfaici14">Popüler Ekran Kartı Markaları</div>
+        <div class="sayfaici15">
+            <p>- NVIDIA (GeForce serisi)</p>
+            <p>- AMD (Radeon serisi)</p>
+            <p>- Intel (özellikle entegre kartlarda)</p>
+        </div>
+    </div>
+</body>
+</html>

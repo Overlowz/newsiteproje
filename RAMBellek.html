@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>RAM Bellek</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #1a3680, #ff9800);
+            display: flex;
+            justify-content: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        li {
+            position: relative;
+        }
+
+        li a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 16px 20px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+
+        li a:hover, .menu:hover > a {
+            background-color: #003366;
+        }
+
+        .menu:hover .acilir-menu {
+            display: block;
+        }
+
+        .acilir-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: orange;
+            border-radius: 0 0 8px 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            z-index: 10;
+            min-width: 200px;
+        }
+
+        .acilir-menu a {
+            display: block;
+            padding: 12px 16px;
+            color: white;
+            text-align: left;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .acilir-menu a:hover {
+            background-color: #d17f00;
+        }
+
+        .aktif {
+            font-weight: bold;
+        }
+
+        .sayfaarkasi {
+            margin: 40px auto;
+            padding: 40px;
+            max-width: 1100px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        .sayfaici {
+            text-align: center;
+            font-size: 48px;
+            font-weight: bold;
+            color: #1a1a1a;
+            margin-bottom: 30px;
+        }
+
+        .sayfaici2,
+        .sayfaici5,
+        .sayfaici6,
+        .sayfaici8,
+        .sayfaici10,
+        .sayfaici13 {
+            font-size: 18px;
+            color: #333;
+            line-height: 1.6;
+            margin: 0 0 20px 60px;
+        }
+
+        .sayfaici4,
+        .sayfaici7,
+        .sayfaici9,
+        .sayfaici12,
+        .sayfaici14 {
+            font-size: 26px;
+            font-weight: bold;
+            color: #003366;
+            margin: 30px 0 10px 40px;
+        }
+
+        .sayfaici3,
+        .sayfaici11 {
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+        }
+
+        .sayfaici3 img,
+        .sayfaici11 img {
+            width: 100%;
+            max-width: 1000px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        table {
+            width: 90%;
+            margin: 0 auto 30px;
+            border-collapse: collapse;
+            font-size: 18px;
+        }
+
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f7f7f7;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a class="aktif" href="Anasayfa.html">Anasayfa</a></li>
+        <li class="menu"><a href="#">İç Donanım</a>
+            <div class="acilir-menu">
+                <a href="Anakart.html">Anakart</a>
+                <a href="EkranKarti.html">Ekran Kartı</a>
+                <a href="RAMBellek.html">RAM Bellek</a>
+                <a href="İslemci.html">İşlemci</a>
+                <a href="DepolamaAygiti.html">Depolama Aygıtı</a>
+                <a href="GucKaynagi.html">Güç Kaynağı</a>
+                <a href="SesKarti.html">Ses Kartı</a>
+                <a href="Fan.html">Fan(Soğutucu)</a>
+                <a href="cd_dvd.html">CD-DVD Sürücü</a>
+            </div>
+        </li>
+        </li>
+            <li class="menu"><a href="#">Dış Donanım</a>
+            <div class="acilir-menu">
+                <a href="Monitor.html">Monitör</a>
+                <a href="Klavye_Mouse.html">Klavye-Mouse</a>
+                <a href="Hoparlor.html">Hoparlör</a>
+                <a href="Kulaklik_Mikrafon.html">Kulaklık-Mikrafon</a>
+                <a href="Yazicilar.html">Yazıcı</a>
+                <a href="Tarayicilar.html">Tarayıcı</a>
+                <a href="Web_Kamera.html">Web Kamera</a>
+                <a href="Modem.html">Modem</a>
+            </div>
+        </li>
+    </ul>
+
+    <div class="sayfaarkasi">
+        <div class="sayfaici">RAM Bellek Nedir?</div>
+
+        <div class="sayfaici2">
+            RAM bellek (tam adıyla Random Access Memory – Rastgele Erişimli Bellek), bilgisayarda geçici veri depolamak için kullanılan çok hızlı bir bellek türüdür.
+        </div>
+
+        <div class="sayfaici3">
+            <img src="Fotoğraflar/RamBellekfoto1.jpg" alt="RAM bellek görseli">
+        </div>
+
+        <div class="sayfaici4">RAM Ne İşe Yarar?</div>
+        <div class="sayfaici5">
+            RAM, bilgisayarın anlık olarak yaptığı işlemleri depolar. Örneğin:
+        </div>
+        <div class="sayfaici6">
+            <p>- Açık olan programlar,</p>
+            <p>- Oynadığın bir oyun,</p>
+            <p>- İnternette gezdiğin sayfalar,</p>
+            <p>- Yazdığın bir belge...</p>
+            <p>Tüm bu bilgiler geçici olarak RAM'de tutulur. Bilgisayar kapandığında RAM'deki veriler silinir.</p>
+        </div>
+
+        <div class="sayfaici7">RAM Özellikleri</div>
+        <div class="sayfaici8">
+            <table>
+                <tr>
+                    <td>Geçici bellek</td>
+                    <td>Bilgisayar kapanınca içindeki bilgiler silinir.</td>
+                </tr>
+                <tr>
+                    <td>Çok hızlıdır</td>
+                    <td>Sabit disk veya SSD'ye göre çok daha hızlı veri okur/yazar.</td>
+                </tr>
+                <tr>
+                    <td>Çalışmayı hızlandırır</td>
+                    <td>RAM ne kadar fazlaysa, bilgisayar o kadar çok işlemi aynı anda yapabilir.</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="sayfaici9">RAM’in Bilgisayar Performansına Etkisi</div>
+        <div class="sayfaici10">
+            <p><b>Az RAM varsa:</b> Bilgisayar yavaşlar, donmalar olur.</p>
+            <p><b>Yeterli RAM varsa:</b> Programlar ve oyunlar sorunsuz çalışır.</p>
+            <p><b>Fazla RAM:</b> Özellikle oyun, video düzenleme, 3D modelleme gibi işler için büyük avantaj sağlar.</p>
+        </div>
+
+        <div class="sayfaici11">
+            <img src="Fotoğraflar/Ramfoto1.jpg" alt="RAM çalışma prensibi">
+        </div>
+
+        <div class="sayfaici12">RAM Türleri</div>
+        <div class="sayfaici13">
+            <p>DDR3, DDR4, DDR5: Nesil farklarıdır. Yeni nesiller daha hızlı ve verimlidir.</p>
+            <p>DIMM (masaüstü) ve SO-DIMM (laptoplar için): Fiziksel boyut farkı.</p>
+        </div>
+
+        <div class="sayfaici14">RAM Ne Kadar Olmalı?</div>
+        <div class="sayfaici15">
+            <table>
+                <tr>
+                    <th>Kullanım Türü</th>
+                    <th>Önerilen RAM Miktarı</th>
+                </tr>
+                <tr>
+                    <td>Temel kullanım (internet, ofis)</td>
+                    <td>4 - 8 GB</td>
+                </tr>
+                <tr>
+                    <td>Oyun / Tasarım</td>
+                    <td>16 GB ve üzeri</td>
+                </tr>
+                <tr>
+                    <td>Profesyonel iş yükleri (render, veri analizi)</td>
+                    <td>32 GB ve üzeri</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

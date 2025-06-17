@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hoparlör</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f2f5;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #1a3680, #ff9800);
+      display: flex;
+      justify-content: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    li {
+      position: relative;
+    }
+
+    li a {
+      display: inline-block;
+      color: white;
+      text-align: center;
+      padding: 16px 20px;
+      text-decoration: none;
+      font-size: 18px;
+      transition: background-color 0.3s;
+    }
+
+    li a:hover, .menu:hover > a {
+      background-color: #003366;
+    }
+
+    .menu:hover .acilir-menu {
+      display: block;
+    }
+
+    .acilir-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: orange;
+      border-radius: 0 0 8px 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      z-index: 10;
+      min-width: 200px;
+    }
+
+    .acilir-menu a {
+      display: block;
+      padding: 12px 16px;
+      color: white;
+      text-align: left;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+
+    .acilir-menu a:hover {
+      background-color: #d17f00;
+    }
+    .hoparlorfoto1
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .hoparlorfoto2
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .aktif {
+      font-weight: bold;
+    }
+
+    .sayfaarkasi {
+      margin: 40px auto;
+      padding: 40px;
+      max-width: 1200px;
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+
+    .sayfaici {
+      text-align: center;
+      font-size: 48px;
+      font-weight: bold;
+      color: #1a1a1a;
+      margin-bottom: 30px;
+    }
+
+    .metin {
+      font-size: 18px;
+      color: #333;
+      line-height: 1.6;
+      margin: 0 5% 30px;
+    }
+
+    .resim {
+      display: flex;
+      justify-content: center;
+      margin: 30px 0;
+    }
+
+    .resim img {
+      width: 100%;
+      max-width: 1000px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .baslik {
+      font-size: 26px;
+      font-weight: bold;
+      color: #003366;
+      margin: 30px 0 10px 40px;
+    }
+
+    table {
+      width: 95%;
+      margin: 20px auto;
+      border-collapse: collapse;
+      font-size: 18px;
+    }
+
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+
+    th, td {
+      padding: 12px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f7f7f7;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li><a class="aktif" href="Anasayfa.html">Anasayfa</a></li>
+    <li class="menu"><a href="#">İç Donanım</a>
+      <div class="acilir-menu">
+        <a href="Anakart.html">Anakart</a>
+        <a href="EkranKarti.html">Ekran Kartı</a>
+        <a href="RAMBellek.html">RAM Bellek</a>
+        <a href="İslemci.html">İşlemci</a>
+        <a href="DepolamaAygiti.html">Depolama Aygıtı</a>
+        <a href="GucKaynagi.html">Güç Kaynağı</a>
+        <a href="SesKarti.html">Ses Kartı</a>
+        <a href="Fan.html">Fan(Soğutucu)</a>
+        <a href="cd_dvd.html">CD-DVD Sürücü</a>
+      </div>
+    </li>
+    <li class="menu"><a href="#">Dış Donanım</a>
+      <div class="acilir-menu">
+        <a href="Monitor.html">Monitör</a>
+        <a href="Klavye_Mouse.html">Klavye-Mouse</a>
+        <a href="Hoparlor.html">Hoparlör</a>
+        <a href="Kulaklik_Mikrafon.html">Kulaklık-Mikrafon</a>
+        <a href="Yazicilar.html">Yazıcı</a>
+        <a href="Tarayicilar.html">Tarayıcı</a>
+        <a href="Web_Kamera.html">Web Kamera</a>
+        <a href="Modem.html">Modem</a>
+      </div>
+    </li>
+  </ul>
+
+  <div class="sayfaarkasi">
+    <div class="sayfaici">Hoparlör</div>
+    <div class="metin">
+      Hoparlör, bilgisayar tarafından işlenen ses sinyallerini dış dünyaya aktaran ses çıkış birimidir. Müzik dinleme, video izleme ve sesli iletişim gibi birçok işlevde önemli rol oynar.
+    </div>
+
+    <div class="resim">
+      <img src="Fotoğraflar/hoparlorfoto1.jpg" alt="Hoparlör Görseli">
+    </div>
+
+    <div class="baslik">Hoparlör Türleri</div>
+    <table>
+      <tr><th>Tür</th><th>Özellik</th></tr>
+      <tr><td>2.0 Sistem</td><td>Sadece sağ ve sol hoparlörlerden oluşur, temel stereo ses sağlar.</td></tr>
+      <tr><td>2.1 Sistem</td><td>İki hoparlör + bir subwoofer içerir, bas seslerde daha güçlüdür.</td></tr>
+      <tr><td>5.1 / 7.1 Surround</td><td>Çoklu kanal desteği ile sinema deneyimi sunar.</td></tr>
+      <tr><td>Bluetooth Hoparlör</td><td>Kabloya ihtiyaç duymadan ses aktarımı sağlar, taşınabilirlik avantajı sunar.</td></tr>
+    </table>
+
+    <div class="baslik">Hoparlör Seçiminde Dikkat Edilmesi Gerekenler</div>
+    <table>
+      <tr><th>Kriter</th><th>Açıklama</th></tr>
+      <tr><td>Güç (Watt)</td><td>Ses çıkış gücünü belirler. Daha yüksek watt, daha yüksek ses seviyesi sunar.</td></tr>
+      <tr><td>Frekans Aralığı</td><td>İnsan kulağının duyabildiği aralığı ne kadar kapsadığı önemlidir.</td></tr>
+      <tr><td>Bağlantı Türleri</td><td>3.5mm jack, USB, Bluetooth gibi girişler bulunmalıdır.</td></tr>
+      <tr><td>Subwoofer</td><td>Derin ve güçlü bas sesler için tercih edilir.</td></tr>
+      <tr><td>Boyut ve Tasarım</td><td>Masaüstü kullanımına veya taşınabilirliğe uygun olmalıdır.</td></tr>
+    </table>
+    <div class="resim">
+      <img src="Fotoğraflar/hoparlorfoto2.jpg">
+    </div>
+    <div class="baslik">Kullanım Alanına Göre Öneriler</div>
+    <table>
+      <tr><th>Amacı</th><th>Önerilen Hoparlör</th></tr>
+      <tr><td>Ofis / Genel Kullanım</td><td>2.0 veya 2.1 sistem</td></tr>
+      <tr><td>Oyun</td><td>2.1 veya 5.1 ses sistemleri, güçlü bas</td></tr>
+      <tr><td>Film / Müzik</td><td>5.1 veya daha yüksek, kaliteli subwoofer'lı modeller</td></tr>
+      <tr><td>Taşınabilirlik</td><td>Bluetooth hoparlör</td></tr>
+    </table>
+  </div>
+</body>
+</html>

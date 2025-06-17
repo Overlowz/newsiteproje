@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Kameralar</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f2f5;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #1a3680, #ff9800);
+      display: flex;
+      justify-content: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    li {
+      position: relative;
+    }
+
+    li a {
+      display: inline-block;
+      color: white;
+      text-align: center;
+      padding: 16px 20px;
+      text-decoration: none;
+      font-size: 18px;
+      transition: background-color 0.3s;
+    }
+
+    li a:hover, .menu:hover > a {
+      background-color: #003366;
+    }
+
+    .menu:hover .acilir-menu {
+      display: block;
+    }
+
+    .acilir-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: orange;
+      border-radius: 0 0 8px 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      z-index: 10;
+      min-width: 200px;
+    }
+
+    .acilir-menu a {
+      display: block;
+      padding: 12px 16px;
+      color: white;
+      text-align: left;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+
+    .acilir-menu a:hover {
+      background-color: #d17f00;
+    }
+
+    .aktif {
+      font-weight: bold;
+    }
+
+    .sayfaarkasi {
+      margin: 40px auto;
+      padding: 40px;
+      max-width: 1200px;
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+
+    .sayfaici {
+      text-align: center;
+      font-size: 48px;
+      font-weight: bold;
+      color: #1a1a1a;
+      margin-bottom: 30px;
+    }
+
+    .metin {
+      font-size: 18px;
+      color: #333;
+      line-height: 1.6;
+      margin: 0 5% 30px;
+    }
+
+    .resim {
+      display: flex;
+      justify-content: center;
+      margin: 30px 0;
+    }
+
+    .resim img {
+      width: 100%;
+      max-width: 1000px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .baslik {
+      font-size: 26px;
+      font-weight: bold;
+      color: #003366;
+      margin: 30px 0 10px 40px;
+    }
+
+    table {
+      width: 95%;
+      margin: 20px auto;
+      border-collapse: collapse;
+      font-size: 18px;
+    }
+
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+
+    th, td {
+      padding: 12px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f7f7f7;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li><a class="aktif" href="Anasayfa.html">Anasayfa</a></li>
+    <li class="menu"><a href="#">İç Donanım</a>
+      <div class="acilir-menu">
+        <a href="Anakart.html">Anakart</a>
+        <a href="EkranKarti.html">Ekran Kartı</a>
+        <a href="RAMBellek.html">RAM Bellek</a>
+        <a href="İslemci.html">İşlemci</a>
+        <a href="DepolamaAygiti.html">Depolama Aygıtı</a>
+        <a href="GucKaynagi.html">Güç Kaynağı</a>
+        <a href="SesKarti.html">Ses Kartı</a>
+        <a href="Fan.html">Fan(Soğutucu)</a>
+        <a href="cd_dvd.html">CD-DVD Sürücü</a>
+      </div>
+    </li>
+    <li class="menu"><a href="#">Dış Donanım</a>
+      <div class="acilir-menu">
+        <a href="Monitor.html">Monitör</a>
+        <a href="Klavye_Mouse.html">Klavye-Mouse</a>
+        <a href="Hoparlor.html">Hoparlör</a>
+        <a href="Kulaklik_Mikrafon.html">Kulaklık-Mikrafon</a>
+        <a href="Yazicilar.html">Yazıcı</a>
+        <a href="Tarayicilar.html">Tarayıcı</a>
+        <a href="Web_Kamera.html">Web Kamera</a>
+        <a href="Modem.html">Modem</a>
+      </div>
+    </li>
+  </ul>
+
+  <div class="sayfaarkasi">
+    <div class="sayfaici">Web Kameralar</div>
+    <div class="metin">
+      Web kameralar, görüntülü iletişim ve video kaydı için kullanılan dış donanım birimleridir. Bilgisayara entegre olabileceği gibi harici olarak da bağlanabilirler.
+    </div>
+    <div class="baslik">Web Kamera Türleri</div>
+    <table>
+      <tr><th>Tür</th><th>Özellik</th></tr>
+      <tr><td>Dahili</td><td>Dizüstü bilgisayarlarda yer alır, temel video iletişimi sağlar.</td></tr>
+      <tr><td>Harici</td><td>USB ile bağlanır, daha yüksek çözünürlük ve kalite sunar.</td></tr>
+      <tr><td>PTZ (Pan-Tilt-Zoom)</td><td>Motorlu yönlendirme ve yakınlaştırma özellikleri sunar.</td></tr>
+      <tr><td>Akıllı Kameralar</td><td>Yüz tanıma, otomatik odaklama gibi gelişmiş özelliklere sahiptir.</td></tr>
+    </table>
+
+    <div class="baslik">Web Kamera Seçiminde Dikkat Edilecekler</div>
+    <table>
+      <tr><th>Kriter</th><th>Açıklama</th></tr>
+      <tr><td>Çözünürlük</td><td>HD (720p), Full HD (1080p) veya 4K kalite destekleri</td></tr>
+      <tr><td>FPS (Frame Per Second)</td><td>Akıcılık için en az 30 FPS önerilir.</td></tr>
+      <tr><td>Mikrofon Desteği</td><td>Gömülü mikrofon ile ses kaydı yapılabilir.</td></tr>
+      <tr><td>Odaklama</td><td>Otomatik veya manuel odaklama desteklenmeli</td></tr>
+      <tr><td>Gizlilik Kapağı</td><td>Kamerayı fiziksel olarak kapatma özelliği güvenlik sağlar.</td></tr>
+    </table>
+
+    <div class="baslik">Kullanım Alanına Göre Öneriler</div>
+    <table>
+      <tr><th>Kullanım</th><th>Önerilen Web Kamera</th></tr>
+      <tr><td>Online Eğitim</td><td>Full HD, mikrofon destekli webcam</td></tr>
+      <tr><td>Canlı Yayın</td><td>60 FPS, ışık sensörlü yüksek çözünürlük</td></tr>
+      <tr><td>İş Görüşmeleri</td><td>720p veya 1080p, otomatik odaklamalı modeller</td></tr>
+      <tr><td>Güvenlik</td><td>PTZ ve gece görüş destekli akıllı kameralar</td></tr>
+    </table>
+  </div>
+</body>
+</html>

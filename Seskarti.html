@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Ses Kartı</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #1a3680, #ff9800);
+            display: flex;
+            justify-content: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        li {
+            position: relative;
+        }
+
+        li a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 16px 20px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+
+        li a:hover, .menu:hover > a {
+            background-color: #003366;
+        }
+
+        .menu:hover .acilir-menu {
+            display: block;
+        }
+
+        .acilir-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: orange;
+            border-radius: 0 0 8px 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            z-index: 10;
+            min-width: 200px;
+        }
+
+        .acilir-menu a {
+            display: block;
+            padding: 12px 16px;
+            color: white;
+            text-align: left;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .acilir-menu a:hover {
+            background-color: #d17f00;
+        }
+
+        .aktif {
+            font-weight: bold;
+        }
+
+        .sayfaarkasi {
+            margin: 40px auto;
+            padding: 40px;
+            max-width: 1200px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        .baslik {
+            font-size: 26px;
+            font-weight: bold;
+            color: #003366;
+            margin: 30px 0 10px 40px;
+        }
+
+        .metin {
+            font-size: 18px;
+            color: #333;
+            line-height: 1.6;
+            margin-left: 60px;
+            margin-bottom: 20px;
+        }
+
+        .sayfaici1 {
+            text-align: center;
+            font-size: 48px;
+            font-weight: bold;
+            color: #1a1a1a;
+            margin-bottom: 30px;
+        }
+
+        .sayfaici2, .sayfaici11 {
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+        }
+
+        .sayfaici2 img, .sayfaici11 img {
+            width: 100%;
+            max-width: 1000px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        table {
+            width: 95%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            font-size: 18px;
+        }
+
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f7f7f7;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a class="aktif" href="Anasayfa.html">Anasayfa</a></li>
+        <li class="menu"><a href="#">İç Donanım</a>
+            <div class="acilir-menu">
+                <a href="Anakart.html">Anakart</a>
+                <a href="EkranKarti.html">Ekran Kartı</a>
+                <a href="RAMBellek.html">RAM Bellek</a>
+                <a href="İslemci.html">İşlemci</a>
+                <a href="DepolamaAygiti.html">Depolama Aygıtı</a>
+                <a href="GucKaynagi.html">Güç Kaynağı</a>
+                <a href="SesKarti.html">Ses Kartı</a>
+                <a href="Fan.html">Fan(Soğutucu)</a>
+                <a href="cd_dvd.html">CD-DVD Sürücü</a>
+            </div>
+        </li>
+        </li>
+            <li class="menu"><a href="#">Dış Donanım</a>
+            <div class="acilir-menu">
+                <a href="Monitor.html">Monitör</a>
+                <a href="Klavye_Mouse.html">Klavye-Mouse</a>
+                <a href="Hoparlor.html">Hoparlör</a>
+                <a href="Kulaklik_Mikrafon.html">Kulaklık-Mikrafon</a>
+                <a href="Yazicilar.html">Yazıcı</a>
+                <a href="Tarayicilar.html">Tarayıcı</a>
+                <a href="Web_Kamera.html">Web Kamera</a>
+                <a href="Modem.html">Modem</a>
+            </div>
+        </li>
+    </ul>
+
+    <div class="sayfaarkasi">
+        <div class="sayfaici1">Ses Kartı Nedir?</div>
+
+        <div class="metin">
+            Ses kartı, bilgisayardaki dijital ses verilerini hoparlör veya kulaklık gibi çıkış cihazları için analog sese dönüştüren donanım bileşenidir. Aynı zamanda mikrofon gibi giriş cihazlarından gelen analog ses sinyallerini dijital veriye çevirir.
+        </div>
+
+        <div class="sayfaici2">
+            <img src="Fotoğraflar/seskartifoto1.jpg" alt="Ses Kartı Görseli">
+        </div>
+
+        <div class="baslik">Ses Kartının Görevleri</div>
+        <div class="metin">
+            1. Dijital → Analog dönüşüm (DAC)<br>
+            2. Analog → Dijital dönüşüm (ADC)<br>
+            3. Ses işlemeyi yönetir<br>
+            4. Ses giriş/çıkış portlarını kontrol eder
+        </div>
+
+        <div class="baslik">Ses Kartı Türleri</div>
+        <div class="metin">
+            - Entegre Ses Kartı: Anakart üzerindedir, temel ihtiyaçlar için yeterlidir.<br>
+            - Harici USB Ses Kartı: Yayıncılar ve müzik üreticileri için ideal.<br>
+            - PCIe Ses Kartı: Profesyonel ses kalitesi sunar.
+        </div>
+
+        <div class="sayfaici11">
+            <img src="Fotoğraflar/seskartifoto2.jpg" alt="Ses Kartı Çeşitleri">
+        </div>
+
+        <div class="baslik">Teknik Özellikler</div>
+        <table>
+            <tr><th>Özellik</th><th>Açıklama</th></tr>
+            <tr><td>Bit Derinliği</td><td>16-bit, 24-bit, 32-bit hassasiyet</td></tr>
+            <tr><td>Örnekleme Hızı</td><td>44.1kHz – 192kHz</td></tr>
+            <tr><td>SNR</td><td>100 dB ve üstü idealdir</td></tr>
+            <tr><td>Empedans Desteği</td><td>Yüksek empedanslı kulaklıklar için önemlidir</td></tr>
+            <tr><td>Kanal Desteği</td><td>Stereo, 5.1, 7.1</td></tr>
+        </table>
+
+        <div class="baslik">Bağlantı Türleri</div>
+        <table>
+            <tr><th>Bağlantı</th><th>Kullanım</th></tr>
+            <tr><td>3.5mm Jack</td><td>Kulaklık, hoparlör</td></tr>
+            <tr><td>USB</td><td>Harici ses kartı</td></tr>
+            <tr><td>XLR</td><td>Profesyonel mikrofonlar</td></tr>
+            <tr><td>Optik</td><td>Dijital çıkış (surround)</td></tr>
+        </table>
+
+        <div class="baslik">Kimler İçin Gereklidir?</div>
+        <table>
+            <tr><th>Kullanıcı</th><th>Gerekli mi?</th><th>Öneri</th></tr>
+            <tr><td>Günlük Kullanıcı</td><td>Hayır</td><td>Entegre</td></tr>
+            <tr><td>Oyuncu</td><td>Opsiyonel</td><td>7.1 PCIe</td></tr>
+            <tr><td>Yayıncı</td><td>Evet</td><td>USB harici kart</td></tr>
+        </table>
+
+        <div class="baslik">Sonuç</div>
+        <div class="metin">
+            Doğru ses kartı, ses deneyimini geliştirir. İhtiyacınıza uygun türü seçmek performans ve kalite açısından önemlidir.
+        </div>
+    </div>
+</body>
+</html>

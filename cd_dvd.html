@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>CD-DVD Sürücü</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #1a3680, #ff9800);
+            display: flex;
+            justify-content: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        li {
+            position: relative;
+        }
+
+        li a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 16px 20px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+
+        li a:hover, .menu:hover > a {
+            background-color: #003366;
+        }
+
+        .menu:hover .acilir-menu {
+            display: block;
+        }
+        .cd_dvdfoto1
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .cd_dvdfoto2
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .acilir-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: orange;
+            border-radius: 0 0 8px 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            z-index: 10;
+            min-width: 200px;
+        }
+
+        .acilir-menu a {
+            display: block;
+            padding: 12px 16px;
+            color: white;
+            text-align: left;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .acilir-menu a:hover {
+            background-color: #d17f00;
+        }
+
+        .aktif {
+            font-weight: bold;
+        }
+
+        .sayfaarkasi {
+            margin: 40px auto;
+            padding: 40px;
+            max-width: 1200px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        .baslik {
+            font-size: 26px;
+            font-weight: bold;
+            color: #003366;
+            margin: 30px 0 10px 40px;
+        }
+
+        .metin {
+            font-size: 18px;
+            color: #333;
+            line-height: 1.6;
+            margin: 0 60px 20px;
+        }
+
+        .sayfaici1 {
+            text-align: center;
+            font-size: 48px;
+            font-weight: bold;
+            color: #1a1a1a;
+            margin-bottom: 30px;
+        }
+
+        .gorsel {
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+        }
+
+        .gorsel img {
+            width: 100%;
+            max-width: 1000px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        table {
+            width: 95%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            font-size: 18px;
+        }
+
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f7f7f7;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a class="aktif" href="Anasayfa.html">Anasayfa</a></li>
+        <li class="menu"><a href="#">İç Donanım</a>
+            <div class="acilir-menu">
+                <a href="Anakart.html">Anakart</a>
+                <a href="EkranKarti.html">Ekran Kartı</a>
+                <a href="RAMBellek.html">RAM Bellek</a>
+                <a href="İslemci.html">İşlemci</a>
+                <a href="DepolamaAygiti.html">Depolama Aygıtı</a>
+                <a href="GucKaynagi.html">Güç Kaynağı</a>
+                <a href="SesKarti.html">Ses Kartı</a>
+                <a href="Fan.html">Fan(Soğutucu)</a>
+                <a href="cd_dvd.html">CD-DVD Sürücü</a>
+            </div>
+        </li>
+        </li>
+            <li class="menu"><a href="#">Dış Donanım</a>
+            <div class="acilir-menu">
+                <a href="Monitor.html">Monitör</a>
+                <a href="Klavye_Mouse.html">Klavye-Mouse</a>
+                <a href="Hoparlor.html">Hoparlör</a>
+                <a href="Kulaklik_Mikrafon.html">Kulaklık-Mikrafon</a>
+                <a href="Yazicilar.html">Yazıcı</a>
+                <a href="Tarayicilar.html">Tarayıcı</a>
+                <a href="Web_Kamera.html">Web Kamera</a>
+                <a href="Modem.html">Modem</a>
+            </div>
+        </li>
+    </ul>
+
+    <div class="sayfaarkasi">
+        <div class="sayfaici1">CD-DVD Sürücü Nedir?</div>
+
+        <div class="metin">
+            CD-DVD sürücüler, optik diskleri okuma ve yazma işlemlerini gerçekleştiren donanım birimleridir. Bilgisayarlara veri yüklemek, film izlemek, müzik dinlemek veya yedekleme yapmak için kullanılırlar.
+        </div>
+        <div class="resim">
+            <img src="Fotoğraflar/cd_dvdfoto1.jpg" width="1200px" height="600px">
+        </div>
+
+        <div class="baslik">CD ve DVD Arasındaki Farklar</div>
+        <table>
+            <tr><th>Özellik</th><th>CD</th><th>DVD</th></tr>
+            <tr><td>Kapasite</td><td>700 MB</td><td>4.7 GB</td></tr>
+            <tr><td>Kullanım Amacı</td><td>Müzik, küçük veri</td><td>Video, yedekleme</td></tr>
+            <tr><td>Hız</td><td>52x'e kadar</td><td>16x'e kadar</td></tr>
+        </table>
+
+        <div class="baslik">Sürücü Türleri</div>
+        <div class="metin">
+            • <strong>CD-ROM:</strong> Yalnızca CD okur<br>
+            • <strong>CD-RW:</strong> CD okuyup yazabilir<br>
+            • <strong>DVD-ROM:</strong> Yalnızca DVD okur<br>
+            • <strong>DVD-RW:</strong> Hem CD hem DVD okur/yazar<br>
+            • <strong>Combo:</strong> CD yazar, DVD okur
+        </div>
+        <div class="resim">
+            <img   src="Fotoğraflar/cd_dvdfoto2.jpg" width="1200px" height="600px">
+        </div>
+        <div class="baslik">Bağlantı Arayüzleri</div>
+        <table>
+            <tr><th>Arayüz</th><th>Açıklama</th></tr>
+            <tr><td>IDE</td><td>Eski sistemler içindir</td></tr>
+            <tr><td>SATA</td><td>Modern anakartlarla uyumludur</td></tr>
+            <tr><td>USB</td><td>Harici sürücülerde kullanılır</td></tr>
+        </table>
+
+        <div class="baslik">Kullanım Alanları</div>
+        <div class="metin">
+            • Yazılım kurulumları (eski oyunlar, işletim sistemleri)<br>
+            • Müzik ve film oynatma<br>
+            • Veri yedekleme<br>
+            • Arşiv erişimi (eski belgeler)
+        </div>
+
+        <div class="baslik">Önerilen Modeller</div>
+        <table>
+            <tr><th>Model</th><th>Bağlantı</th><th>Özellik</th></tr>
+            <tr><td>LG GP57EB40</td><td>USB</td><td>Taşınabilir, DVD-RW</td></tr>
+            <tr><td>Asus SDRW-08D2S-U</td><td>USB</td><td>Şık ve hafif</td></tr>
+            <tr><td>HP F6V97AA</td><td>USB</td><td>Plug & Play</td></tr>
+        </table>
+
+        <div class="baslik">Sonuç</div>
+        <div class="metin">
+            CD-DVD sürücüler, dijital medya çağında azalsa da eski verileri okumak ve yazmak için hâlâ gereklidir. Harici modeller sayesinde modern sistemlerle de uyumluluk korunur.
+        </div>
+    </div>
+</body>
+</html>

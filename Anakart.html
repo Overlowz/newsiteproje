@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Anakart</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f0f2f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #1a3680, #ff9800);
+            display: flex;
+            justify-content: center;
+            border-bottom: 2px solid #ccc;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        li {
+            font-size: 18px;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        li a:hover, .menu:hover {
+            background-color: #003366;
+        }
+
+        .acilir-menu {
+            display: none;
+            position: absolute;
+            background-color: #ff9800;
+            min-width: 200px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            z-index: 100;
+        }
+
+        .acilir-menu a {
+            padding: 12px 16px;
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+
+        .acilir-menu a:hover {
+            background-color: #d17f00;
+        }
+
+        .menu:hover .acilir-menu {
+            display: block;
+        }
+
+        .sayfaarkasi {
+            margin: 40px auto;
+            padding: 40px;
+            background-color: white;
+            border-radius: 15px;
+            max-width: 1000px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        .sayfaici {
+            text-align: center;
+            font-size: 48px;
+            color: #1a1a1a;
+            margin-bottom: 20px;
+            font-weight: bold;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .sayfaici2, .sayfaici4, .sayfaici5 {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .sayfaici3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sayfaici3 img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin: 20px 0;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .sayfaici5 p:first-child {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #003366;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a class="aktif" href="Anasayfa.html">Anasayfa</a></li>
+        <li class="menu"><a href="#">İç Donanım</a>
+            <div class="acilir-menu">
+                <a href="Anakart.html">Anakart</a>
+                <a href="EkranKarti.html">Ekran Kartı</a>
+                <a href="RAMBellek.html">RAM Bellek</a>
+                <a href="İslemci.html">İşlemci</a>
+                <a href="DepolamaAygiti.html">Depolama Aygıtı</a>
+                <a href="GucKaynagi.html">Güç Kaynağı</a>
+                <a href="SesKarti.html">Ses Kartı</a>
+                <a href="Fan.html">Fan(Soğutucu)</a>
+                <a href="cd_dvd.html">CD-DVD Sürücü</a>
+            </div>
+        </li>
+            <li class="menu"><a href="#">Dış Donanım</a>
+            <div class="acilir-menu">
+                <a href="Monitor.html">Monitör</a>
+                <a href="Klavye_Mouse.html">Klavye-Mouse</a>
+                <a href="Hoparlor.html">Hoparlör</a>
+                <a href="Kulaklik_Mikrafon.html">Kulaklık-Mikrafon</a>
+                <a href="Yazicilar.html">Yazıcı</a>
+                <a href="Tarayicilar.html">Tarayıcı</a>
+                <a href="Web_Kamera.html">Web Kamera</a>
+                <a href="Modem.html">Modem</a>
+            </div>
+        </li>
+    </ul>
+
+    <div class="sayfaarkasi">
+        <div class="sayfaici">
+            <p>Anakart Nedir?</p>
+        </div>
+        <div class="sayfaici2">
+            <p>
+                Anakart, modern bir bilgisayar gibi karmaşık bir elektronik sistemin birincil ve en merkezî baskılı devre kartıdır. Apple
+                bilgisayarlardaki muadiline logic board (lojik kart) denir ve bazen mobo olarak kısaltılır. Fiziksel yapı olarak 
+                anakartlar özel alaşımlı bir blok üzerine yerleştirilmiş ve üzerinde RAM yuvaları, genişleme kartı slotları, devreler ve
+                yongalar bulunan kare şeklinde bir plakadır. Bu plaka çalışma sistemini organize eder. Bu organizasyon anakart üzerindeki
+                yonga setleri sayesinde olur.
+            </p>
+        </div>
+        <div class="sayfaici3">
+            <img src="Fotoğraflar/Anakartfoto1.jpg" alt="resme alternatif yazı">
+        </div>
+        <div class="sayfaici4">
+            <p>
+                Kişisel bilgisayarlarda 486-PIII seri arasında veriyolularında çok büyük değişmeler olmuştur. 486'larda veriyolu olarak ISA ve VESA kullanılmıştır.
+                Bu veriyolu artık kullanılmamaktadır. 486'ların son nesilleri Intel Pentium PCI veriyolu üzerinde çalıştılar. PCI veriyolu ISA-VESA veriyolundan 
+                daha hızlıdır. Sistemin hızlı olması sayesinde grafik arabirimleri, kontrol kartları ve genişletme kartlarından çok daha performans sağlanmasına
+                yol açmıştır. Bununla yetinmeyen insanoğlu artık hızına hız katarak AGP veri slotunu kullanmakta ve veri transferine hız katmıştır. PII 
+                serisinde yaklaşık bir tane ISA, ortalama beş tane PCI ve bir tane AGP slotu kullanılmıştır.
+
+                Günümüzde üretilen anakartların çoğu, 2005 yılı itibarıyla kişisel bilgisayar pazarının %96'sından fazlasını elinde tutan IBM uyumlu diye tanımlanan 
+                bilgisayarlar içindir.
+
+                Bir anakart, bir backplane gibi, sistem bileşenleri arasındaki haberleşmeyi sağlar, ancak bir backplane'den farklı olarak merkezi işlem birimi ve 
+                gerçek zamanlı saat ve bazı çevresel arabirimler gibi diğer alt sistemleri de içerir.
+
+                Tipik bir masaüstü bilgisayar, anakartın bir arada tuttuğu mikroişlemci, bellek ve diğer gerekli bileşenlerden oluşur. Sabit disk, ekran ve ses
+                kartları ve diğer çevresel aygıtlar ise anakarta bağdaştırıcı veya kablolarla takılır, ancak modern bilgisayarlarda bu çevresel aygıtların
+                anakarta tümleşik olması giderek yaygınlaşmaktadır.
+            </p>
+        </div>
+        <div class="sayfaici5">
+            <p>Anakartın Temel Bileşenleri</p>
+            <p>
+                1- Yonga Seti (Chipset): Anakartın beyni gibidir, veri akışını yönetir.<br>
+                2- İşlemci Yuvası (CPU Soketi): İşlemcinin takıldığı yerdir.<br>
+                3- RAM Yuvaları: Bellek modüllerinin takıldığı slotlardır.<br>
+                4- Genişletme Yuvaları (PCIe, PCI): Ekran kartı, ses kartı gibi ek bileşenlerin takıldığı yuvalardır.<br>
+                5- Depolama Bağlantıları (SATA, M.2): SSD veya HDD gibi depolama aygıtlarını bağlamak için kullanılır.<br>
+                6- Güç Bağlantıları: Anakart ve bileşenlerin çalışması için güç sağlar.<br>
+                7- Giriş/Çıkış Bağlantı Noktaları (USB, HDMI, Ethernet): Harici cihazları bağlamak için kullanılır.<br>
+                8- BIOS/UEFI: Bilgisayarın açılışını kontrol eden temel yazılımdır.<br>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

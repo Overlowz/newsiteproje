@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Fan (Soğutucu)</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #1a3680, #ff9800);
+            display: flex;
+            justify-content: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        li {
+            position: relative;
+        }
+
+        li a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 16px 20px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+
+        li a:hover, .menu:hover > a {
+            background-color: #003366;
+        }
+
+        .menu:hover .acilir-menu {
+            display: block;
+        }
+
+        .acilir-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: orange;
+            border-radius: 0 0 8px 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            z-index: 10;
+            min-width: 200px;
+        }
+
+        .acilir-menu a {
+            display: block;
+            padding: 12px 16px;
+            color: white;
+            text-align: left;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        .fanfoto1
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .fanfoto2
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .fanfoto3
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .acilir-menu a:hover {
+            background-color: #d17f00;
+        }
+
+        .aktif {
+            font-weight: bold;
+        }
+
+        .sayfaarkasi {
+            margin: 40px auto;
+            padding: 40px;
+            max-width: 1200px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        .baslik {
+            font-size: 26px;
+            font-weight: bold;
+            color: #003366;
+            margin: 30px 0 10px 40px;
+        }
+
+        .metin {
+            font-size: 18px;
+            color: #333;
+            line-height: 1.6;
+            margin: 0 60px 20px;
+        }
+
+        .sayfaici1 {
+            text-align: center;
+            font-size: 48px;
+            font-weight: bold;
+            color: #1a1a1a;
+            margin-bottom: 30px;
+        }
+
+        .gorsel {
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+        }
+
+        .gorsel img {
+            width: 100%;
+            max-width: 1000px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        table {
+            width: 95%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            font-size: 18px;
+        }
+
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f7f7f7;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a class="aktif" href="Anasayfa.html">Anasayfa</a></li>
+        <li class="menu"><a href="#">İç Donanım</a>
+            <div class="acilir-menu">
+                <a href="Anakart.html">Anakart</a>
+                <a href="EkranKarti.html">Ekran Kartı</a>
+                <a href="RAMBellek.html">RAM Bellek</a>
+                <a href="İslemci.html">İşlemci</a>
+                <a href="DepolamaAygiti.html">Depolama Aygıtı</a>
+                <a href="GucKaynagi.html">Güç Kaynağı</a>
+                <a href="SesKarti.html">Ses Kartı</a>
+                <a href="Fan.html">Fan(Soğutucu)</a>
+                <a href="cd_dvd.html">CD-DVD Sürücü</a>
+            </div>
+        </li>
+        </li>
+            <li class="menu"><a href="#">Dış Donanım</a>
+            <div class="acilir-menu">
+                <a href="Monitor.html">Monitör</a>
+                <a href="Klavye_Mouse.html">Klavye-Mouse</a>
+                <a href="Hoparlor.html">Hoparlör</a>
+                <a href="Kulaklik_Mikrafon.html">Kulaklık-Mikrafon</a>
+                <a href="Yazicilar.html">Yazıcı</a>
+                <a href="Tarayicilar.html">Tarayıcı</a>
+                <a href="Web_Kamera.html">Web Kamera</a>
+                <a href="Modem.html">Modem</a>
+            </div>
+        </li>
+    </ul>
+
+    <div class="sayfaarkasi">
+        <div class="sayfaici1">Fan (Soğutucu) Nedir?</div>
+
+        <div class="metin">
+            Fan soğutucu, işlemci (CPU) veya diğer bileşenlerin ürettiği ısıyı dağıtarak sistemin kararlı çalışmasını sağlayan hava tabanlı bir soğutma çözümüdür.
+        </div>
+        <div class="fanfoto1">
+            <img src="Fotoğraflar/Fanfoto1.jpg" >
+        </div>
+
+        <div class="baslik">Çalışma Prensibi</div>
+        <div class="metin">
+            • Taban (Baseplate): İşlemci yüzeyine temas ederek ısıyı alır.<br>
+            • Isı boruları: Isıyı tabandan kanatlara taşır.<br>
+            • Kanatlar (Fins): Geniş yüzeyle ısıyı yayar.<br>
+            • Fan: Hava akışıyla ısının dışarı atılmasını sağlar.
+        </div>
+
+        <div class="baslik">Soğutucu Türleri</div>
+        <div class="metin">
+            • <strong>Stok Soğutucu:</strong> İşlemci ile birlikte gelir, temel kullanım için uygundur.<br>
+            • <strong>Kule Tipi:</strong> Yüksek performanslı, dikey ısı borularına sahiptir.<br>
+            • <strong>Top-Down:</strong> Mini kasalarda kullanılır, hava aşağıya doğru üflenir.
+        </div>
+        <div class="fanfoto2">
+            <img src="Fotoğraflar/Fanfoto2.jpg" width="1200px" height="700px">
+        </div>
+        <div class="baslik">Ölçü ve Uyumluluk</div>
+        <table>
+            <tr><th>Ölçü</th><th>Açıklama</th></tr>
+            <tr><td>Fan Çapı</td><td>80mm–140mm, daha büyük fan daha iyi soğutma</td></tr>
+            <tr><td>Yükseklik</td><td>Kasa içi uyum için önemlidir</td></tr>
+            <tr><td>RAM Uyumu</td><td>Büyük soğutucular RAM alanını kapatabilir</td></tr>
+            <tr><td>Soket Uyumu</td><td>AM4, LGA1700 vb. ile uyumlu olmalı</td></tr>
+        </table>
+
+        <div class="baslik">Performans Özellikleri</div>
+        <table>
+            <tr><th>Özellik</th><th>Açıklama</th></tr>
+            <tr><td>TDP</td><td>Desteklenen maksimum ısı değeri (ör: 95W)</td></tr>
+            <tr><td>RPM</td><td>Fan hızı (ör: 600–2000 RPM)</td></tr>
+            <tr><td>CFM</td><td>Hava akış miktarı, ne kadar hava üflendiği</td></tr>
+            <tr><td>dBA</td><td>Ses seviyesi (15–35 dBA sessiz kabul edilir)</td></tr>
+            <tr><td>PWM</td><td>Fan hızının otomatik kontrolü</td></tr>
+        </table>
+
+        <div class="baslik">Fan mı, Sıvı Soğutma mı?</div>
+        <table>
+            <tr><th>Kriter</th><th>Fan Soğutucu</th><th>Sıvı Soğutma</th></tr>
+            <tr><td>Kurulum</td><td>Kolay</td><td>Karmaşık</td></tr>
+            <tr><td>Fiyat</td><td>Daha ucuz</td><td>Daha pahalı</td></tr>
+            <tr><td>Performans</td><td>Orta-Yüksek</td><td>Yüksek-Çok yüksek</td></tr>
+            <tr><td>Bakım</td><td>Gerekmez</td><td>Gerekebilir</td></tr>
+            <tr><td>Gürültü</td><td>Düşük</td><td>Pompa sesi olabilir</td></tr>
+        </table>
+        <div class="fanfoto2">
+            <img src="Fotoğraflar/Fanfoto3.jpg" width="1200px" height="600px">
+        </div>
+        <div class="baslik">Önerilen Modeller</div>
+        <table>
+            <tr><th>Segment</th><th>Model</th><th>Özellik</th></tr>
+            <tr><td>Bütçe</td><td>DeepCool GAMMAXX 400</td><td>RGB, 4 heatpipe</td></tr>
+            <tr><td>Orta Seviye</td><td>Cooler Master Hyper 212</td><td>Geniş uyumluluk</td></tr>
+            <tr><td>Üst Seviye</td><td>Noctua NH-D15</td><td>Sessiz ve yüksek performans</td></tr>
+            <tr><td>Mini Sistem</td><td>Noctua NH-L9i</td><td>Düşük profil</td></tr>
+        </table>
+
+        <div class="baslik">Sonuç</div>
+        <div class="metin">
+            Fan soğutucular, fiyat/performans dengesi ile güvenilir çözümler sunar. Sıvı soğutmaya göre kurulumu kolaydır ve düşük bakım gerektirir. Uygun model seçimi ile sessiz ve etkili bir soğutma sağlanabilir.
+        </div>
+    </div>
+</body>
+</html>
